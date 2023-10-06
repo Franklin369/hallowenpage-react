@@ -1,0 +1,109 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Poppins:wght@400;500;600;700&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  --first-color: hsl(276, 86%, 51%);
+  --first-color-alt: hsl(287, 48%, 49%);
+  --white-color: #fff;
+  --text-color: hsl(22, 4%, 75%);
+  --text-color-light: hsl(22, 4%, 55%);
+  --body-color: hsl(15, 6%, 14%);
+  --container-color: hsl(22, 8%, 7%);
+
+  /*========== Font and typography ==========*/
+
+  --body-font: 'Poppins', sans-serif;
+  --second-font: 'Butcherman', cursive;
+
+  --biggest-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+
+  @media screen and (min-width: 1024px) {
+    --biggest-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+
+
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--white-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.button{
+  display: inline-block;
+  background-color: #9817EE;
+  padding: 1rem 1.5rem;
+  border-radius: 4rem;
+  color: #fff;
+  font-weight: var(--font-semi-bold);
+  transition: background .3s, color .3s;
+
+  &:hover{
+      background-color: var(--first-color);
+      color: var(--white-color);
+  }
+  box-shadow: 0px 0px 20px -3px rgba(152, 23, 238,0.5);
+}
+::-webkit-scrollbar{
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(22, 8%, 10%);
+  
+  
+}
+::-webkit-scrollbar-thumb{
+  border-radius: .5rem;
+  background-color: hsl(0, 0%, 23%);
+  
+  
+}
+
+
